@@ -1,0 +1,124 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Prefeitura Lança Novo Plano de Mobilidade Urbana",
+      "descricao": "Novo plano visa melhorar o transporte público e reduzir o trânsito na cidade.",
+      "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana que inclui a criação de corredores exclusivos de ônibus, ciclovias e a requalificação de vias principais. O projeto será implementado ao longo dos próximos dois anos.",
+      "categoria": "Cidades",
+      "autor": "Joana Ribeiro",
+      "destaque": true,
+      "data": "2025-03-30",
+      "imagem_pincipal": "assets/img/mobilidade.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "assets/img/mobilidade1.jpg",
+          "descricao": "Ônibus novo"
+        },
+        {
+          "id": 2,
+          "src": "assets/img/mobilidade2.jpg",
+          "descricao": "Ciclovia em área central"
+        },
+        {
+          "id": 3,
+          "src": "assets/img/mobilidade3.jpg",
+          "descricao": "Requalificação de calçadas"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Tecnologia 6G Está em Desenvolvimento",
+      "descricao": "Pesquisadores anunciam avanços na próxima geração de redes móveis.",
+      "conteudo": "Universidades e empresas de telecomunicação já estão testando tecnologias que poderão compor a infraestrutura do 6G. A expectativa é que a nova geração seja 100 vezes mais rápida que o 5G e amplie a integração entre dispositivos inteligentes.",
+      "categoria": "Tecnologia",
+      "autor": "Carlos Mendes",
+      "destaque": false,
+      "data": "2025-03-28",
+      "imagem_pincipal": "assets/img/tecnologia_6g.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "assets/img/tecnologia_6g1.jpg",
+          "descricao": "Teste de rede 6G em laboratório"
+        },
+        {
+          "id": 2,
+          "src": "assets/img/tecnologia_6g2.jpg",
+          "descricao": "Equipamentos para 6G"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Festival de Música Reúne Mais de 50 Mil Pessoas",
+      "descricao": "Evento cultural movimentou o final de semana com atrações nacionais e internacionais.",
+      "conteudo": "Durante três dias de programação, o festival contou com a participação de mais de 40 artistas e promoveu atividades culturais e gastronômicas em paralelo. A prefeitura estima um impacto positivo no turismo local.",
+      "categoria": "Cultura",
+      "autor": "Ana Clara Silva",
+      "destaque": true,
+      "data": "2025-03-27",
+      "imagem_pincipal": "assets/img/festival_musica.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "assets/img/festival_musica1.jpg",
+          "descricao": "Público no festival"
+        },
+        {
+          "id": 2,
+          "src": "assets/img/festival_musica2.jpg",
+          "descricao": "Artista se apresentando"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Linha 2 do Metrô de BH Será Expandida até Barreiro",
+      "descricao": "Governo estadual anuncia retomada das obras da Linha 2 após anos de paralisação.",
+      "conteudo": "O Governo de Minas anunciou a ampliação da Linha 2 do Metrô de Belo Horizonte, ligando o Calafate ao Barreiro. A obra, que esteve paralisada por mais de 15 anos, agora tem previsão de conclusão para 2027 e contará com recursos federais e privados.",
+      "categoria": "Transporte",
+      "autor": "Rafael Souza",
+      "destaque": true,
+      "data": "2025-04-10",
+      "imagem_pincipal": "assets/img/metro_bh.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "assets/img/metro_bh1.jpg",
+          "descricao": "Projeto da nova estação no Barreiro"
+        },
+        {
+          "id": 2,
+          "src": "assets/img/metro_bh2.jpg",
+          "descricao": "Maquinário em operação no canteiro de obras"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Feira Hippie da Afonso Pena Retorna com Novo Formato",
+      "descricao": "Tradicional feira dominical volta a funcionar com organização e novas atrações culturais.",
+      "conteudo": "A Feira Hippie da Avenida Afonso Pena, um dos maiores pontos turísticos e culturais de Belo Horizonte, voltou a funcionar em novo formato. A prefeitura implementou um novo plano de organização das barracas e ampliou a presença de artistas de rua e apresentações culturais.",
+      "categoria": "Cultura",
+      "autor": "Lucas Andrade",
+      "destaque": true,
+      "data": "2025-04-14",
+      "imagem_pincipal": "assets/img/feira_hippie.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "assets/img/feira_hippie1.jpg",
+          "descricao": "Artesãos expondo produtos feitos à mão"
+        },
+        {
+          "id": 2,
+          "src": "assets/img/feira_hippie2.jpg",
+          "descricao": "Visitantes na nova área de alimentação"
+        }
+      ]
+    }
+  ]
+}

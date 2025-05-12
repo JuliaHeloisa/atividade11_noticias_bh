@@ -1,0 +1,1 @@
+body { font-family: Arial, sans-serif; } h1, h2 { font-weight: bold; } #carouselFotos { max-height: 400px; overflow: hidden; } #carouselFotos .carousel-item img { height: 400px; object-fit: cover; }

@@ -1,0 +1,15 @@
+{
+  "name": "diw-20251-semana11",
+  "version": "1.0.0",
+  "description": "Back end com JSONServer. Projeto da disciplina  de Desenvolvimento de Interfaces Web de vários cursos da PUC Minas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx json-server ./db/db.json"
+  },
+  "author": "Julia Heloisa",
+  "license": "ISC",
+    "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
