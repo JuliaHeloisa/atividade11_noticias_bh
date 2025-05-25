@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Notícia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <h1>Cadastro de Notícias</h1>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <section>
+            <h2>Formulário de Notícia</h2>
+            <form id="noticiaForm" class="mb-5">
+                <input type="hidden" id="noticiaId">
+                <div class="mb-3">
+                    <label for="titulo" class="form-label">Título</label>
+                    <input type="text" class="form-control" id="titulo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="descricao" class="form-label">Descrição Curta</label>
+                    <textarea class="form-control" id="descricao" rows="2" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="autor" class="form-label">Autor</label>
+                    <input type="text" class="form-control" id="autor" required>
+                </div>
+                <div class="mb-3">
+                    <label for="conteudo" class="form-label">Conteúdo Completo</label>
+                    <textarea class="form-control" id="conteudo" rows="5" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="imagemPrincipal" class="form-label">URL Imagem Principal</label>
+                    <input type="url" class="form-control" id="imagemPrincipal" required>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label d-block">Imagens Complementares</label>
+                    <div id="imagensComplementaresContainer">
+                        </div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm mt-2" id="addComplementaryImage">
+                        Adicionar Imagem
+                    </button>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="destaque">
+                    <label class="form-check-label" for="destaque">Destaque?</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Salvar Notícia</button>
+                <button type="button" class="btn btn-secondary" id="limparForm">Limpar</button>
+            </form>
+        </section>
+
+        <section class="mt-5">
+            <h2>Notícias Cadastradas</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Destaque</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaNoticiasCadastro">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

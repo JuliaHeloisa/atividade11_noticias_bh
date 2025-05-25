@@ -1,7 +1,7 @@
 {
   "noticias": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "Prefeitura Lança Novo Plano de Mobilidade Urbana",
       "descricao": "Novo plano visa melhorar o transporte público e reduzir o trânsito na cidade.",
       "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana que inclui a criação de corredores exclusivos de ônibus, ciclovias e a requalificação de vias principais. O projeto será implementado ao longo dos próximos dois anos.",
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "Tecnologia 6G Está em Desenvolvimento",
       "descricao": "Pesquisadores anunciam avanços na próxima geração de redes móveis.",
       "conteudo": "Universidades e empresas de telecomunicação já estão testando tecnologias que poderão compor a infraestrutura do 6G. A expectativa é que a nova geração seja 100 vezes mais rápida que o 5G e amplie a integração entre dispositivos inteligentes.",
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "titulo": "Festival de Música Reúne Mais de 50 Mil Pessoas",
       "descricao": "Evento cultural movimentou o final de semana com atrações nacionais e internacionais.",
       "conteudo": "Durante três dias de programação, o festival contou com a participação de mais de 40 artistas e promoveu atividades culturais e gastronômicas em paralelo. A prefeitura estima um impacto positivo no turismo local.",
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "titulo": "Linha 2 do Metrô de BH Será Expandida até Barreiro",
       "descricao": "Governo estadual anuncia retomada das obras da Linha 2 após anos de paralisação.",
       "conteudo": "O Governo de Minas anunciou a ampliação da Linha 2 do Metrô de Belo Horizonte, ligando o Calafate ao Barreiro. A obra, que esteve paralisada por mais de 15 anos, agora tem previsão de conclusão para 2027 e contará com recursos federais e privados.",
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "titulo": "Feira Hippie da Afonso Pena Retorna com Novo Formato",
       "descricao": "Tradicional feira dominical volta a funcionar com organização e novas atrações culturais.",
       "conteudo": "A Feira Hippie da Avenida Afonso Pena, um dos maiores pontos turísticos e culturais de Belo Horizonte, voltou a funcionar em novo formato. A prefeitura implementou um novo plano de organização das barracas e ampliou a presença de artistas de rua e apresentações culturais.",
@@ -117,6 +117,21 @@
           "id": 2,
           "src": "assets/img/feira_hippie2.jpg",
           "descricao": "Visitantes na nova área de alimentação"
+        }
+      ]
+    },
+    {
+      "id": "2af2",
+      "titulo": "Projeto metrô do Barreiro é cancelado",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "autor": "Julia Heloísa",
+      "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a lorem dui. Maecenas tincidunt eget arcu et pellentesque. Phasellus vitae ex sapien. Ut fringilla, enim sed mollis sodales, nisi elit ornare lectus, id pharetra metus nibh vel metus. Phasellus blandit aliquet neque eu vehicula. Sed ac condimentum mauris, quis semper lacus. Cras vitae ornare arcu.\n\n",
+      "imagem_pincipal": "assets/img/metro_bh.jpg",
+      "destaque": false,
+      "imagens_complementares": [
+        {
+          "src": "assets/img/metro_bh2.jpg",
+          "descricao": "mapa metro"
         }
       ]
     }
