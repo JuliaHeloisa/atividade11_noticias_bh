@@ -26,7 +26,8 @@
           "src": "assets/img/mobilidade3.jpg",
           "descricao": "Requalificação de calçadas"
         }
-      ]
+      ],
+      "data_publicacao": "2025-06-05"
     },
     {
       "id": "2",
@@ -49,7 +50,8 @@
           "src": "assets/img/tecnologia_6g2.jpg",
           "descricao": "Equipamentos para 6G"
         }
-      ]
+      ],
+      "data_publicacao": "2025-06-06"
     },
     {
       "id": "3",
@@ -72,7 +74,8 @@
           "src": "assets/img/festival_musica2.jpg",
           "descricao": "Artista se apresentando"
         }
-      ]
+      ],
+      "data_publicacao": "2025-06-08"
     },
     {
       "id": "4",
@@ -95,7 +98,8 @@
           "src": "assets/img/metro_bh2.jpg",
           "descricao": "Maquinário em operação no canteiro de obras"
         }
-      ]
+      ],
+      "data_publicacao": "2025-06-09"
     },
     {
       "id": "5",
@@ -118,7 +122,8 @@
           "src": "assets/img/feira_hippie2.jpg",
           "descricao": "Visitantes na nova área de alimentação"
         }
-      ]
+      ],
+      "data_publicacao": "2025-06-10"
     },
     {
       "id": "2af2",
@@ -133,7 +138,24 @@
           "src": "assets/img/metro_bh2.jpg",
           "descricao": "mapa metro"
         }
-      ]
+      ],
+      "data_publicacao": "2025-06-11"
+    },
+    {
+      "id": "4235",
+      "titulo": "Projeto metrô do Barreiro é recontinuado",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "autor": "Renato Rios Neto",
+      "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a lorem dui. Maecenas tincidunt eget arcu et pellentesque. Phasellus vitae ex sapien. Ut fringilla, enim sed mollis sodales, nisi elit ornare lectus, id pharetra metus nibh vel metus. Phasellus blandit aliquet neque eu vehicula. Sed ac condimentum mauris, quis semper lacus. Cras vitae ornare arcu.\\n\\n",
+      "imagem_pincipal": "assets/img/metro_bh1.jpg",
+      "destaque": false,
+      "imagens_complementares": [
+        {
+          "src": "assets/img/metro_bh2.jpg",
+          "descricao": "metro barreiro"
+        }
+      ],
+      "data_publicacao": "2025-06-12"
     }
   ]
 }

@@ -204,7 +204,9 @@ function renderCadastro() {
             conteudo: document.getElementById('conteudo').value,
             imagem_pincipal: document.getElementById('imagemPrincipal').value,
             destaque: document.getElementById('destaque').checked,
-            imagens_complementares: imagensComplementares // Now collected from form
+            imagens_complementares: imagensComplementares, // Now collected from form
+            // Adiciona a data de publicação para o calendário
+            data_publicacao: document.getElementById('dataPublicacao') ? document.getElementById('dataPublicacao').value : ''
         };
 
         const id = noticiaIdInput.value;
@@ -236,6 +238,7 @@ function renderCadastro() {
             noticiaForm.reset(); // Clear the form
             noticiaIdInput.value = ''; // Clear the hidden ID
             imagensContainer.innerHTML = ''; // Clear complementary images
+            if (document.getElementById('dataPublicacao')) document.getElementById('dataPublicacao').value = ''; // Clear date
             fetchNoticiasForCadastro(); // Refresh the list
         })
         .catch(error => console.error('Erro ao salvar notícia:', error));
@@ -253,6 +256,7 @@ function renderCadastro() {
                 document.getElementById('conteudo').value = noticia.conteudo;
                 document.getElementById('imagemPrincipal').value = noticia.imagem_pincipal;
                 document.getElementById('destaque').checked = noticia.destaque;
+                if (document.getElementById('dataPublicacao')) document.getElementById('dataPublicacao').value = noticia.data_publicacao || '';
 
                 // Clear existing complementary image inputs
                 imagensContainer.innerHTML = '';
@@ -290,12 +294,50 @@ function renderCadastro() {
         noticiaForm.reset();
         noticiaIdInput.value = '';
         imagensContainer.innerHTML = ''; // Clear complementary images on form reset
+        if (document.getElementById('dataPublicacao')) document.getElementById('dataPublicacao').value = ''; // Clear date
     });
+}
+
+// ---- Nova função para renderizar o calendário ----
+function renderCalendar() {
+    const calendarEl = document.getElementById('calendar');
+    if (!calendarEl) return;
+
+    fetch(API_URL)
+        .then(res => res.json())
+        .then(noticias => {
+            const events = noticias.map(n => ({
+                title: n.titulo,
+                start: n.data_publicacao, // FullCalendar usa 'start' para a data do evento
+                url: `detalhe.html?id=${n.id}` // Link para a página de detalhes da notícia
+            })).filter(event => event.start); // Filtra eventos que não têm data de publicação
+
+            const calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                locale: 'pt-br', // Define o idioma para português
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                events: events,
+                eventClick: function(info) {
+                    // Previne o comportamento padrão do link, se houver um URL no evento
+                    if (info.event.url) {
+                        info.jsEvent.preventDefault(); // don't go to the url
+                        window.open(info.event.url, '_blank'); // Open in new tab
+                    }
+                }
+            });
+            calendar.render();
+        })
+        .catch(error => console.error('Erro ao buscar notícias para o calendário:', error));
 }
 
 
 document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('sliderDestaques')) renderIndex();
   if (document.getElementById('detalheNoticia')) renderDetalhe();
-  if (document.getElementById('noticiaForm')) renderCadastro(); // Call renderCadastro for the new page
+  if (document.getElementById('noticiaForm')) renderCadastro();
+  if (document.getElementById('calendar')) renderCalendar(); // Chamar a nova função para o calendário
 });
