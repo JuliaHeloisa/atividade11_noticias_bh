@@ -1,6 +1,6 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=19495675)
 
-# Trabalho Prático - Semana 11
+# Trabalho Prático - Semana 14
 
 Nessa etapa, vamos evoluir o projeto anterior e contemplar um ambiente de desenvolvimento mais completo, típico de equipes profissionais. Nesse processo, vamos utilizar um **servidor backend simulado** com o **JSON Server** baseado em APIs RESTful. Um arquivo JSON funcionará como banco de dados e será processado pelo JSON Server que expõe uma API RESTful no servidor.
 
@@ -29,6 +29,11 @@ Breve descrição sobre seu projeto: Portal de noticias da cidade de Belo Horizo
 
 ![Print da tela de cadastro de noticia](public/assets/img/cadastro.jpg)
 *Diretório: `public/assets/img/cadastro.jpg`*
+
+**Print da tela de calendario de noticia**
+
+![Print da tela de cadastro de noticia](public/assets/img/full-calendar.jpg)
+*Diretório: `public/assets/img/full-calendar.jpg`*
 
 
 ![Print da tela de cadastro do crud](public/assets/img/crud.jpg)
